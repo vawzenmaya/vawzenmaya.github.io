@@ -275,7 +275,7 @@ hr {
 .content ul a,
 .content ol a {
   text-decoration: none;
-  color: #005cbf;
+  color: rgb(79, 246, 50);
 }
 
 .content p a:hover,
@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  background-color: rgb(79, 246, 50);
   display: flex;
 }
 
@@ -664,6 +664,31 @@ ol.nested>li:before {
   justify-content: flex-start;
   align-items: center;
 }
+/* Ensure the html and body take the full width of the viewport */
+
+
+
+
+.project-description, .copyright, .links, .social, .version {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 10px;
+}
+
+.links a, .social a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social i {
+    font-size: 20px;
+}
+
+/* Additional styles to remove unwanted space */
+* {
+    box-sizing: border-box;
+}
+
 
 .text-large {
   font-size: 20px;
@@ -741,11 +766,11 @@ ol.nested>li:before {
 .custom-text-primary,
 .custom-text-primary p,
 .custom-text-primary a {
-  color: #007bff;
+  color: rgb(79, 246, 50);
 }
 
 .custom-text-primary a:hover {
-  color: #005cbf;
+  color:rgb(79, 246, 50);
 }
 
 .custom-text-danger,
@@ -836,7 +861,7 @@ ol.nested>li:before {
 }
 
 .masonry figure.selected {
-  border: 5px solid #007bff;
+  border: 5px solid rgb(79, 246, 50);
   -moz-box-shadow: inset 0 0 4px 1px #6d6d6d;
   -webkit-box-shadow: inset 0 0 4px 1px #6d6d6d;
   box-shadow: inset 0 0 4px 1px #6d6d6d;
@@ -1200,7 +1225,7 @@ ol.nested>li:before {
 .custom-survey .custom-radio-group-survey input[type="radio"]:checked+label,
 .custom-survey .custom-radio-group-survey input[type="checkbox"]:checked+label {
   color: white;
-  background-color: #007bff;
+  background-color: rgb(79, 246, 50);
 }
 
 .custom-survey .custom-radio-group-survey input[type="radio"]+label:before,
@@ -1317,7 +1342,7 @@ ol.nested>li:before {
 .custom-survey.answer-mode .custom-radio-group-survey input[type="radio"].highlight+label,
 .custom-survey.answer-mode .custom-radio-group-survey input[type="checkbox"].highlight+label {
   box-shadow: 0px 0px 0px 5px white inset;
-  background-color: #007bff;
+  background-color:rgb(79, 246, 50);
   color: white;
 }
 
